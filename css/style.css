@@ -1,0 +1,206 @@
+ 
+ 
+* {
+	margin: 0;
+	padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	background-color: #e9f0f4;
+}
+.wrapper {
+	min-width: 320px;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header { height: 1px; }
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+}
+.block {
+	display: block;
+    line-height: 1.42857;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    transition: border 0.2s ease-in-out 0s;
+    width: 40%;
+    margin:25% auto;
+    
+}
+ 
+ 
+.header_list {
+   
+   font-size: 14px;
+   font-family: "Myriad Pro";
+   color: rgb(218, 228, 235);
+   line-height: 2.429;
+   padding-left: 3.5em;
+   background:#2e3641 url('../img/head_bg.jpg') no-repeat left;
+ 
+}
+
+ 		
+a { text-decoration: none !important; }
+		
+ a.del {
+	display: inline-block;
+	width: 42px;
+	text-align: center;
+	float: right;
+	color: #ccc;
+	font-size: 8px;
+}
+		
+a.del:hover {
+	display: inline-block;
+	color: #c28998;
+	background: url('../img/trash.jpg') no-repeat center;
+}
+		
+a.btn-common {
+	color: #c0c0c0;
+	margin-bottom: 12px;
+	display: inline-block;
+	padding-left: 1px;
+	background: url('../img/li_bg.jpg') repeat-y left;
+	width: 34px;
+	height: 39px;float: left;
+}
+		
+a.btn-common img { margin: 9px; }
+		
+li.task {
+	cursor: default;
+	padding: 4px 6px;
+	border-bottom: 1px dotted  #e6ebed;
+    font-size: 12px;
+    font-family: "Myriad Pro";
+    color: rgb(118, 122, 125);
+    line-height: 2.833;
+    list-style: none;
+    
+    background:#ffffff url('../img/li_bg.jpg') repeat-y left;
+}
+ 
+.item {
+	margin-left: 2em;
+}		
+input[type="text"] {
+    border: none;
+	border-bottom: 1px dotted  #e6ebed;
+	padding: 0px 6px 4px 1.2em;
+    font-size: 12px;
+    font-family: "Myriad Pro";
+    color: rgba(119, 122, 125, 0.502);
+    font-style: italic;
+    line-height: 2.833;
+    width: 80%;       
+}
+ 
+input[type="text"]:focus { outline: none; }
+	   
+li.task span { margin-left: 2.5em; }
+		
+#list-ready li.task {
+	list-style-type: none;
+	color: Gray;
+		}
+ 
+#todo-list { list-style: none; }
+ 
+.edit,.ok_edit { 	display: none; }
+ 
+ .ok_edit {
+ 	width: 30px;
+ 	float: left;
+ 	margin-top: -2em;
+ }
+ .edit{margin-top: -3em;
+ 	margin-left: 3em;
+ 	width: 50% !important;
+ 	float: left;
+ }
+ 	
+ 
+#todo-list li.done label {
+   color: #777777;
+   text-decoration: line-through;
+}
+#todo-list .destroy {
+   margin-top: 7px;
+   cursor: pointer;
+   width: 15px;
+   height: 15px;
+   background:  url('../img/trash.jpg') no-repeat;
+}
+#todo-list li:hover .destroy {
+   display: block; float: right;
+   margin-right: 20px;
+   margin-top: 9px;
+}
+#todo-list .destroy:hover {
+    background:  url('../img/trash.jpg') no-repeat;
+}
+#todo-list li.editing {
+   border-bottom: none;
+   margin-top: -1px;
+   padding: 0;
+}
+#todo-list li.editing:last-child {
+   margin-bottom: -1px;
+}
+#todo-list li.editing .edit {
+   display: block;
+   width: 444px;
+   padding: 13px 15px 14px 20px;
+   margin: 0;
+}
+#todo-list li.editing .view {
+   display: none;
+}
+ 
+.edit { border:none !important; }
+ 
+ 
+input[type=checkbox]:not(old) {
+   width   : 28px;
+   margin  : 0;
+   padding : 0;
+   opacity : 0;
+}
+
+input[type=checkbox]:not(old) + label{
+   display      : inline-block;
+   margin-left  : -28px;
+   padding-left : 42px;
+   background   :url('../img/checks.png') no-repeat 0 0;
+   line-height  : 20px;
+}
+
+input[type=checkbox]:not(old):checked + label{
+  background-position : 0 -20px;
+}
+
+input[type=radio]:not(old):checked + label{
+  background-position : 0 -40px;
+}
+
+ 
+	 /* Footer
+-----------------------------------------------------------------------------*/
+.footer { height: 1px;  }
+
+ 
+
+ 
